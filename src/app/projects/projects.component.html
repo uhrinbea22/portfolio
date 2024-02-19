@@ -1,0 +1,46 @@
+<!-- projects.component.html -->
+<section id="projects" class="projects">
+  <h2>My Projects</h2>
+  <div *ngFor="let project of projects; let i = index" class="project" [ngClass]="{'left-project': i % 2 === 0, 'right-project': i % 2 !== 0}" (mouseenter)="showDescription(project)" (mouseleave)="hideDescription()">
+    <div class="project-info">
+      <h3>{{ project.name }}</h3>
+      <p class="tags">
+        <span class="tag" *ngFor="let tag of project.tags">{{ tag }}</span>
+      </p>
+      <p class="description">{{ project.description }}</p>
+    </div>
+    <div class="project-frame" *ngIf="project.image">
+      <img [src]="project.image" alt="{{ project.name }}" class="project-image">
+    </div>
+    <div class="additional-section" *ngIf="project.cards">
+      <div class="card card1"></div>
+      <div class="card card2"></div>
+      <div class="card card3"></div>
+      <div class="card card4"></div>
+      <div class="card card5"></div>
+      <div class="card card6"></div>
+      <div class="card card7"></div>
+      <div class="card card8"></div>
+    </div>
+    <div class="row" *ngIf="project.row">
+      <div class="column">
+        <img class="column_img" src="assets/uiux/gen_sprint.png" alt="general_sprint_figma">
+        <div class="middle">
+          <div class="text">John Doe</div>
+        </div>
+      </div>
+      <div class="column">
+        <img class="column_img" src="assets/uiux/nature.png" alt="fake_nature_figma">
+        <div class="middle">
+          <div class="text">John Doe</div>
+        </div>
+      </div>
+      <div class="column">
+        <img class="column_img" src="assets/uiux/style.png" alt="fake_style_figma">
+        <div class="middle">
+          <div class="text">John Doe</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

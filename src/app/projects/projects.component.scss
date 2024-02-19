@@ -1,0 +1,184 @@
+/* projects.component.css */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-left: -0.11%;
+  margin-right: -0.11%;
+}
+
+.project {
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+
+}
+
+.project:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-frame {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.project-frame:hover {
+  transform: scale(1.1);
+}
+
+.project-image {
+  width: 70%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-info {
+  flex: 1;
+  position: relative;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+.left-project .project-frame {
+  order: 2;
+}
+
+.left-project .project-info {
+  order: 1;
+}
+
+.right-project .project-frame {
+  order: 1;
+}
+
+.right-project .project-info {
+  order: 2;
+}
+
+.project:hover .project-info {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.tags {
+  margin-top: 10px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 5px;
+  background-color: #ff4d94;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.description {
+  margin-top: 10px;
+}
+
+.additional-section{
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  height: 500px;
+  flex-grow: inherit;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  height: 400px; /* Adjust the height as needed */
+  transition: transform 0.5s ease-in-out, 0.5s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 300px; /* Adjust the width as needed */
+  margin: 20px;
+}
+
+.card:hover {
+  z-index: 200;
+  transform: scale(1.15);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.card.card1 { background-image: url('../../assets/cyberstone/1.jpg'); left: 0; }
+.card.card2 { background-image: url('../../assets/cyberstone/2.jpg'); left: 14.3%; }
+.card.card3 { background-image: url('../../assets/cyberstone/3.jpg'); left: 28.6%; }
+.card.card4 { background-image: url('../../assets/cyberstone/4.jpg'); left: 42.9%; }
+.card.card5 { background-image: url('../../assets/cyberstone/5.jpg'); left: 57.2%; }
+.card.card6 { background-image: url('../../assets/cyberstone/6.jpg'); left: 71.5%; }
+.card.card7 { background-image: url('../../assets/cyberstone/7.jpg'); left: 85.8%; }
+.card.card8 { background-image: url('../../assets/cyberstone/8.jpg'); left: 100%; }
+
+
+/* for a 3 column one row each column is one pic*/
+
+.column {
+  flex:1;
+  text-align: center;
+  margin: 5px;
+
+}
+.column_img{
+  backface-visibility: hidden;
+  width: 300px;
+  height: 300px;
+  box-shadow:  5px 10px #4e4a4a;
+  object-fit: contain;
+}
+
+
+.row{
+  display:flex;
+}
+
+
+
+
+
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.column:hover .column_img {
+  opacity: 0.3;
+}
+
+.column:hover .middle {
+  opacity: 1;
+}
+.text {
+  color: #000000;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
