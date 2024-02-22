@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class ProjectsComponent {
   projects = [
     {
-      name: 'My thesis',
-      description: 'Description of Project 1. This is a longer description providing more details about the project.',
-      tags: ['Mobile App Development', 'Flutter', 'Dart' , 'Firebase'],
+      name: 'Expense Management Application',
+      description: 'This application I developed in Flutter, using Firebase as a backend service.<br/>csas',
+      tags: ['Mobile App', 'Flutter', 'Dart' , 'Firebase'],
       image: '../assets/expense_management/mockup.png',
       showDescription: false
     },

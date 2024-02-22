@@ -1,5 +1,6 @@
 <!-- projects.component.html -->
 <section id="projects" class="projects">
+
   <h2>My Projects</h2>
   <div *ngFor="let project of projects; let i = index" class="project" [ngClass]="{'left-project': i % 2 === 0, 'right-project': i % 2 !== 0}" (mouseenter)="showDescription(project)" (mouseleave)="hideDescription()">
     <div class="project-info">

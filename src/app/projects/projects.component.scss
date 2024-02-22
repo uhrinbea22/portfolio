@@ -30,7 +30,7 @@
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
-
+  margin: 0;
 }
 
 .project-frame:hover {
@@ -78,22 +78,23 @@
 
 .tag {
   display: inline-block;
-  padding: 5px 10px;
-  margin-right: 5px;
-  background-color: #ff4d94;
-  color: #fff;
-  border-radius: 5px;
+  padding: 0.25vw 0.5vw;
+  margin-right: 0.25vw;
+  background-color: #B4B8E3FF;
+  color: #381f1f;
+  border-radius: 0.4vw;
+  box-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.1);;
 }
 
 .description {
-  margin-top: 10px;
+  margin-top: 0.5vw;
 }
 
 .additional-section{
   position: relative;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
-  height: 500px;
+  height: 26vw;
   flex-grow: inherit;
   display: grid;
   place-items: center;
@@ -103,12 +104,12 @@
   display: flex;
   justify-content: center;
   position: absolute;
-  height: 400px; /* Adjust the height as needed */
+  height: 300px; /* Adjust the height as needed */
   transition: transform 0.5s ease-in-out, 0.5s ease-in-out;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width: 300px; /* Adjust the width as needed */
+  width: 200px; /* Adjust the width as needed */
   margin: 20px;
 }
 
@@ -138,9 +139,9 @@
 .column_img{
   backface-visibility: hidden;
   width: 300px;
-  height: 300px;
+  height:150px;
   box-shadow:  5px 10px #4e4a4a;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 
@@ -181,4 +182,11 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .card{
+      height: 20vw;
+      width: 10vw;
+  }
 }

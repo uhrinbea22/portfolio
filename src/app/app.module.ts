@@ -17,11 +17,11 @@ import { ProjectsComponent } from './projects/projects.component';
     HeroSectionComponent,
     ProjectsComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    ReactiveFormsModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        ReactiveFormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -2,27 +2,28 @@
 
 
 .container {
-  width: 700px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 20%;
+  margin-left: 40%;
 }
 .container .btn {
   position: relative;
   top: 0;
   left: 0;
-  width: 200px;
-  height: 50px;
+  width: 13vw;
+  height: 3vw;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .container .btn a {
-  position: absolute;
+  position: relative;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.35vw;
   top: 0;
   left: 0;
   width: 100%;
@@ -31,21 +32,21 @@
   justify-content: center;
   align-items: center;
   background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 30px;
-  padding: 10px;
-  letter-spacing: 1px;
+  box-shadow: 0 0.6vw 0.6vw rgba(0, 0, 0, 0.3);
+  border-bottom: 0.06vw solid rgba(255, 255, 255, 0.1);
+  border-top: 0.06vw solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.5vw;
+  padding: 1.2vw;
+  letter-spacing: 0.06vw;
   text-decoration: none;
   overflow: hidden;
   color: #000000;
   z-index: 1;
   transition: 0.5s;
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(0.8vw);
 }
 .container .btn:hover a {
-  letter-spacing: 3px;
+  letter-spacing: 0.15vw;
 }
 .container .btn a::before {
   content: "";
@@ -60,18 +61,18 @@
   filter: blur(0px);
 }
 .container .btn:hover a::before {
-  transform: skewX(45deg) translate(200px);
+  transform: skewX(45deg) translate(10vw);
 }
 .container .btn::before {
   content: "";
   position: absolute;
   left: 50%;
   transform: translatex(-50%);
-  bottom: -5px;
-  width: 30px;
-  height: 10px;
+  bottom: -0.26vw;
+  width: 1.5vw;
+  height: 0.5vw;
   background: #f00;
-  border-radius: 10px;
+  border-radius: 0.5vw;
   transition: 0.5s;
   transition-delay: 0.5;
 }
@@ -79,7 +80,7 @@
   bottom: 0;
   height: 50%;
   width: 80%;
-  border-radius: 30px;
+  border-radius: 2vw;
 }
 
 .container .btn::after {
@@ -87,11 +88,11 @@
   position: absolute;
   left: 50%;
   transform: translatex(-50%);
-  top: -5px;
-  width: 30px;
-  height: 10px;
+  top: -0.25vw;
+  width: 1.5vw;
+  height: 0.5vw;
   background: #f00;
-  border-radius: 10px;
+  border-radius: 0.5vw;
   transition: 0.5s;
   transition-delay: 0.5;
 }
@@ -99,19 +100,19 @@
   top: 0;
   height: 50%;
   width: 80%;
-  border-radius: 30px;
+  border-radius: 3vw;
 }
 .container .btn:nth-child(1)::before, /*chnage 1*/
 .container .btn:nth-child(1)::after {
   background: #ff1f71;
-  box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71,
-  0 0 60px #ff1f71;
+  box-shadow: 0 0 0.2vw #ff1f71, 0 0 0.7vw #ff1f71, 0 0 1.5vw #ff1f71,
+  0 0 3vw #ff1f71;
 }
 .container .btn:nth-child(2)::before, /* 2*/
 .container .btn:nth-child(2)::after {
   background: #2db2ff;
-  box-shadow: 0 0 5px #2db2ff, 0 0 15px #2db2ff, 0 0 30px #2db2ff,
-  0 0 60px #2db2ff;
+  box-shadow: 0 0 0.2vw #2db2ff, 0 0 0.7vw #2db2ff, 0 0 1.5vw #2db2ff,
+  0 0 3vw #2db2ff;
 }
 
 
@@ -123,9 +124,12 @@
 .hero-section {
   text-align: center;
   display: flex;
-  margin: 10px;
-  height: 80vh;
+  margin: auto;
+  height: 100%;
   width: 100%;
+  object-fit: scale-down;
+  padding-bottom: 5vw;
+//  overflow: hidden;
 }
 
 .portfolio_pic {
@@ -134,19 +138,28 @@
   float: left;
   display: inline-flex;
   margin-left: 10%;
-  border-radius: 40%;
+//  border-radius: 40%;
   margin-top: 2%;
-
-  object-fit: scale-down;
-  max-width: 100%;
+  object-fit: cover;
 }
 
-.portfolio_pic_section{
-  float: left;
-  display: inline-flex;
-  object-fit: scale-down;
+.decor{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  right: 0;
+//  bottom: 0;
+  overflow: hidden;
 }
 
+.decor_pic{
+  width: 30%;
+  position: absolute;
+  right: -2vw;
+  top: 10vw;
+
+}
 
 .hero-inner{
   font-family: "Candara", sans-serif;
@@ -154,27 +167,28 @@
   color: #000000;
   text-align: center;
   align-items: center;
+  float: left;
   width: 30%;
   display: inline-block;
   white-space: nowrap;
   line-height: 70%;
-  float: left;
-  margin-top: 70px;
+  margin-top: 2.5vw;
   object-fit: scale-down;
 }
 
 .hero-inner{
+
   h1{
-    font-size: 7vw;
-    margin-left: 50%;
+    font-size:6vw;
+    margin-left: 40%;
   }
   h2{
-    font-size: 5vw;
-    margin-left: 80%;
+    font-size: 4vw;
+    margin-left: 70%;
   }
   p{
-    font-size:3vw;
-    margin-left: 100%;
+    font-size:2vw;
+    margin-left: 90%;
   }
 }
 
@@ -185,8 +199,6 @@ a:hover {
   text-decoration: none;
 }
 
-
-
 .text-box {
   margin-left: 44vw;
   margin-top: 42vh;
@@ -196,21 +208,21 @@ a:hover {
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 40px;
+  padding: 1% 10%;
   display: inline-block;
-  border-radius: 100px;
+  border-radius: 20%;
   transition: all .2s;
   position: absolute;
 }
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.2);
 }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.25vw 0.5vw rgba(0, 0, 0, 0.2);
 }
 
 .btn-white {
@@ -223,7 +235,7 @@ a:hover {
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 100px;
+  border-radius: 40%;
   position: absolute;
   top: 0;
   left: 0;
@@ -248,11 +260,46 @@ a:hover {
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(1.5vw);
   }
 
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0vw);
   }
 }
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+
+  .portfolio_pic{
+    width: 40%;
+    height: auto;
+    object-fit: scale-down;
+  }
+
+  .hero-inner{
+    text-align: left;
+    h1{
+      font-size:6vw;
+      margin-left:5vw;
+      margin-top: 6vw;
+    }
+    h2{
+      font-size: 4vw;
+      margin-left:10vw;
+    }
+    p{
+      font-size:2vw;
+      margin-left: 15vw;
+    }
+  }
+
+
+
+}
+
