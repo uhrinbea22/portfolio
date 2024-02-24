@@ -1,0 +1,24 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.about-me-text {
+  width: 100%;
+  height: auto;
+  background-color: #f4f4f4; /* Background color */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: #333; /* Heading color */
+  margin-bottom: 20px;
+}
+
+p {
+  color: #666; /* Text color */
+  line-height: 1.6;
+}

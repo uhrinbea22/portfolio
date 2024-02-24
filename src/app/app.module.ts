@@ -8,6 +8,7 @@ import {ReactiveFormsModule} from "@angular/forms";
 import { FooterComponent } from './footer/footer.component';
 import { HeroSectionComponent } from './hero-section/hero-section.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ProjectsComponent } from './projects/projects.component';
     HeaderComponent,
     FooterComponent,
     HeroSectionComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    AboutComponent
   ],
     imports: [
         BrowserModule,

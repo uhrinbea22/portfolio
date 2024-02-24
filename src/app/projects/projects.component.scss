@@ -1,22 +1,22 @@
-/* projects.component.css */
+
 .projects {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  margin-left: -0.11%;
-  margin-right: -0.11%;
+
 }
 
 .project {
+  width: 100%;
   display: flex;
   flex-grow: 1;
   position: relative;
   overflow: hidden;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease-in-out;
-
+ // margin-bottom: 20px;
+ // border-radius: 8px;
+ // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ // transition: box-shadow 0.3s ease-in-out;
+  padding: 2vw;
 }
 
 .project:hover {
@@ -26,30 +26,34 @@
 .project-frame {
   flex: 1;
   position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  //overflow: hidden;
+  //border-radius: 8px;
+  //box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
-  margin: 0;
+  margin: auto;
 }
+
 
 .project-frame:hover {
   transform: scale(1.1);
 }
 
 .project-image {
-  width: 70%;
+  width: 100%;
   height: auto;
   border-radius: 8px;
+  margin: auto;
 }
 
 .project-info {
+  //flex:1;
   flex: 1;
   position: relative;
   padding: 15px;
   background-color: rgba(255, 255, 255, 0.9);
   transition: background-color 0.3s ease-in-out;
   border-radius: 8px;
+  margin: auto;
 }
 
 .left-project .project-frame {
@@ -73,44 +77,57 @@
 }
 
 .tags {
-  margin-top: 10px;
+  margin-top: 0.5vw;
+  font-size: 1.5vw;
 }
 
 .tag {
   display: inline-block;
   padding: 0.25vw 0.5vw;
   margin-right: 0.25vw;
-  background-color: #B4B8E3FF;
+  background-color: #c0adf1;
   color: #381f1f;
   border-radius: 0.4vw;
   box-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.1);;
 }
 
 .description {
-  margin-top: 0.5vw;
+  margin: auto;
+  font-family: "Ubuntu Condensed", serif;
+  font-size: 2vw;
+}
+
+.project_name{
+  margin: auto;
+  font-family: "Ubuntu Condensed", serif;
+  font-size: 3vw;
+
 }
 
 .additional-section{
   position: relative;
-  box-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.1);
+  //box-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
   height: 26vw;
   flex-grow: inherit;
   display: grid;
   place-items: center;
+  padding: 5vw;
 }
 
 .card {
   display: flex;
   justify-content: center;
   position: absolute;
-  height: 300px; /* Adjust the height as needed */
+  height: 19.063vw; /* Adjust the height as needed */
   transition: transform 0.5s ease-in-out, 0.5s ease-in-out;
   background-size: contain;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
-  width: 200px; /* Adjust the width as needed */
-  margin: 20px;
+  width: 15vw; /* Adjust the width as needed */
+  margin: 10px;
+  bottom: 0;
+  background-color: black;
 }
 
 .card:hover {
@@ -131,7 +148,7 @@
 /* for a 3 column one row each column is one pic*/
 
 .column {
-  flex:1;
+  flex:3;
   text-align: center;
   margin: 5px;
 
@@ -149,10 +166,30 @@
   display:flex;
 }
 
+.project-showcase{
+  width: 100%;
+  background-color: transparent;
+  margin : auto;
+  padding: 0;
+  text-align: center;
+}
+/*
+.projects_text{
+  //font-family: "Rubik Doodle Shadow";
+  //font-family: "Oi";
+  font-family: "Modak";
+  font-size: 10vw;
+  font-style: normal;
+  font-weight: 400;
+  color: #ecc0db;
 
+  //text-shadow: 0 0 3px #090909;
+  margin: auto;
+  text-shadow: 0.5vw 0.3vw 0vw #000,
+  -0.5vw  0vw 0vw #000;
 
-
-
+}
+*/
 
 .middle {
   transition: .5s ease;
@@ -185,8 +222,51 @@
 }
 
 @media screen and (max-width: 600px) {
-  .card{
-      height: 20vw;
-      width: 10vw;
+  .card {
+    height: 14.063vw;
+    width: 10.417vw;
+  }
+  .additional-section {
+    width: 30%;
+    display: flex;
+  }
+  .project-info {
+    flex: auto;
+  }
+  .project-image {
+    height: 40vw;
+    width: 40vw;
+
+  }
+  .project:nth-child(3) {
+    .project-info{
+      display: flex;
+      padding: 0px;
+      margin-left: 60px;
+      flex: 1;
+    }
+    .additional-section{
+      margin-top:0;
+      height: 15vw;
+    }
   }
 }
+
+
+  .project:nth-child(3) {
+
+    .project-info {
+
+      margin-top: 0px;
+    }
+
+    .additional-section {
+      margin-bottom: 0px;
+
+    }
+
+    .tags {
+      display: none;
+    }
+
+  }

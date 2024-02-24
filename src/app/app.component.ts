@@ -19,7 +19,7 @@ export class AppComponent {
 
   onSubmit(): void {
     // Process checkout data here
-    console.warn('Your order has been submitted', this.checkoutForm.value);
+    console.log(this.checkoutForm.value);
     this.checkoutForm.reset();
   }
 
