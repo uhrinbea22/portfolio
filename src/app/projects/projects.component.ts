@@ -9,39 +9,38 @@ export class ProjectsComponent {
   projects = [
     {
       name: 'Expense Management Application',
-      description: 'I have developed this application in Flutter, using Firebase as a backend service.\n' +
-        'It was my first time developing an application for mobile. \n ',
+      description: 'An app for tracking your expense and income. Detailed transactions, balance, limits, calendar view, diagrams.',
       tags: ['Mobile App', 'Flutter', 'Dart' , 'Firebase'],
       image: '../assets/expense_management/as.png',
+      link:'https://github.com/uhrinbea22/XPT'
     },
     {
-      name: 'Cyberstone',
-      description: 'School project made with Angular, and Python django. Frontend programming and design skills.',
-      tags: ['Angular', 'Design skills', 'Wireframes'],
+      name: 'Card game cards',
+      description: 'Futuristic robot-themed images generated with MidJourney, styled with Pixlr',
+      tags: ['Design skills', 'AI'],
       cards: true,
     },
     {
-      name: 'Data analysis',
-      description: 'Description of Project 4. A comprehensive description of the project and its impact.',
-      tags: ['Web Development', 'React', 'API Integration'],
+      name: 'Data analysis (About Popular K-Dramas)',
+      description: 'Some basic assumptions from the data, which I downloaded from Kaggle.I used Jupyter Notebook (Python) for analysing the data.',
+      tags: ['Jupyter Notebook', 'Basic Data Analysis', 'Python'],
+      link:'https://github.com/uhrinbea22/Data-analysis-'
     },
     {
       name: 'Woocommerce Wordpress Site',
-      description: 'I have made 2 wordpress sites. One of them uses Woocommerce, so it is a website, the other is just a descriptive site.',
-      tags: ['Wordpress', 'Webdesign', 'Design skills'],
+      description: 'Webshop page for a cakery.',
+      tags: ['Wordpress', 'Webdesign'],
       image: '../assets/wp/ac_mockup.png',
+      link:'https://cukraszdaac.eu/wp/'
     },
     {
       name: 'Wordpress Site',
-      description: 'I have made 2 wordpress sites. One of them uses Woocommerce, so it is a website, the other is just a descriptive site.',
+      description: 'Business website for a building company. ',
       tags: ['Wordpress', 'Webdesign', 'Design skills'],
       image: '../assets/wp/general_mockup.png',
+      link:'https://general-sprint.com/'
     },
-    {
-      name: 'UI/UX designs',
-      description: 'I was a part of a free course in which i have learned about web-development. This project focuses on graphic design and visual elements.',
-      tags: ['Design', 'Graphics', 'Illustration'],
-    },
+
   ];
 
 }

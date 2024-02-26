@@ -8,6 +8,11 @@
         <span class="tag" *ngFor="let tag of project.tags">{{ tag }}</span>
       </p>
       <p class="description">{{ project.description }}</p>
+      <div class="container">
+        <div class="button_link" *ngIf="project.link"><a href="{{project.link}}">Let's see</a></div>
+      </div>
+
+
     </div>
     <div class="project-frame" *ngIf="project.image">
       <img [src]="project.image" alt="{{ project.name }}" class="project-image">

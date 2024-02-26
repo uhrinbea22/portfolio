@@ -10,18 +10,11 @@ import {FormBuilder} from "@angular/forms";
 export class AppComponent {
   title = 'bea';
 
-  checkoutForm = this.formBuilder.group({
-    name: ''
-  });
 
-  constructor(private formBuilder: FormBuilder) {
+
+  constructor() {
   }
 
-  onSubmit(): void {
-    // Process checkout data here
-    console.log(this.checkoutForm.value);
-    this.checkoutForm.reset();
-  }
 
 
 
