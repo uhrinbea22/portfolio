@@ -1,6 +1,5 @@
 <!-- projects.component.html -->
 <section id="projects" class="projects">
-
   <div *ngFor="let project of projects; let i = index" class="project" [ngClass]="{'left-project': i % 2 === 0, 'right-project': i % 2 !== 0}">
     <div class="project-info">
       <h3 class="project_name">{{ project.name }}</h3>
@@ -11,8 +10,6 @@
       <div class="container">
         <div class="button_link" *ngIf="project.link"><a href="{{project.link}}">Let's see</a></div>
       </div>
-
-
     </div>
     <div class="project-frame" *ngIf="project.image">
       <img [src]="project.image" alt="{{ project.name }}" class="project-image">
@@ -27,7 +24,6 @@
       <div class="card card7"></div>
       <div class="card card8"></div>
     </div>
-
   </div>
 </section>
 

@@ -10,15 +10,8 @@
   display: flex;
   text-align: center;
   justify-content: left;
-
-
-  //border-bottom: 5px solid transparent ;
- // border-image: linear-gradient(0.25turn,rgba(56,2,155,0), rgb(211, 152, 248), rgba(255,0,128), rgba(56,2,155,0));
- // border-image-slice: 1;
-  // box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   color: #000000;
   text-align: center;
@@ -53,15 +46,9 @@ a:nth-child(3){
   }
 }
 
-
-
-/* Change the color of links on hover*/
 .topnav a:hover {
   color: #2a081d;
   font-weight: bold;
-
-  //background: url("../../assets/decor.png");
-
 }
 
 a,
@@ -74,53 +61,3 @@ a:hover {
   display: none;
 }
 
-/*
-.menu-icon {
-  display: none;
-  cursor: pointer;
-  color: #000000;
-  font-size: 24px;
-}
-@media screen and (max-width: 600px) {
-
-.text {
-  display: none;
-}
-
-.menu-icon {
-  display: block;
-  position: fixed;
-}
-
-  .menu-icon.active{
-    position: fixed;
-  }
-
-.topnav.active {
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: #ac6464;
-  width: 50vw;
-  border-radius: 10vw;
-  margin-left:  -5vw;
-  margin-top: -5vw;
-  z-index: 1000;
-}
-
-.text.active {
-  display: block;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-}
-
-.text.active:hover {
-  background-color: rgba(255, 0, 0, 0.7);
-}
-
-.text.active:active {
-  background-color: rgba(255, 0, 0, 0.9);
-}
-
-}
-*/

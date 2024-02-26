@@ -1,24 +1,54 @@
-body {
+.about-me-section {
   font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 1.7vw;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
 }
 
 .about-me-text {
-  width: 100%;
+  display:inline;
+  width: 80%;
   height: auto;
-  background-color: #f4f4f4; /* Background color */
-  padding: 20px;
+  background-color: white ;
   box-sizing: border-box;
+  flex: 1;
+  margin-left: 3vw;
+}
+
+.about-me-heading{
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Rampart One", sans-serif;
+  //font-family: "Cherry Bomb One", sans-serif;
+  //font-family: "Titan One", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
   text-transform: uppercase;
-  color: #333; /* Heading color */
-  margin-bottom: 20px;
+  color:  #c0adf1;;
+  writing-mode: vertical-rl;
+  text-align: center;
+  text-orientation: upright;
+  font-size: 6vw;
+  letter-spacing: 0.2vw;
 }
 
 p {
-  color: #666; /* Text color */
+  color: #000000;
   line-height: 1.6;
+}
+
+.place{
+  float: right;
+  width: 40%;
+  background-color: #c0adf1;
+  margin-right: -5vw;
+  height: auto;
 }

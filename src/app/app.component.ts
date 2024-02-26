@@ -8,14 +8,8 @@ import {FormBuilder} from "@angular/forms";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'bea';
-
-
 
   constructor() {
   }
-
-
-
 
 }

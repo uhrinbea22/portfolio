@@ -20,12 +20,7 @@ export class ProjectsComponent {
       tags: ['Design skills', 'AI'],
       cards: true,
     },
-    {
-      name: 'Data analysis (About Popular K-Dramas)',
-      description: 'Some basic assumptions from the data, which I downloaded from Kaggle.I used Jupyter Notebook (Python) for analysing the data.',
-      tags: ['Jupyter Notebook', 'Basic Data Analysis', 'Python'],
-      link:'https://github.com/uhrinbea22/Data-analysis-'
-    },
+
     {
       name: 'Woocommerce Wordpress Site',
       description: 'Webshop page for a cakery.',
@@ -39,6 +34,12 @@ export class ProjectsComponent {
       tags: ['Wordpress', 'Webdesign', 'Design skills'],
       image: '../assets/wp/general_mockup.png',
       link:'https://general-sprint.com/'
+    },
+    {
+      name: 'Data analysis (About Popular K-Dramas)',
+      description: 'Some basic assumptions from the data, which I downloaded from Kaggle.I used Jupyter Notebook (Python) for analysing the data.',
+      tags: ['Jupyter Notebook', 'Basic Data Analysis', 'Python'],
+      link:'https://github.com/uhrinbea22/Data-analysis-'
     },
 
   ];
