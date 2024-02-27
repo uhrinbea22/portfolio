@@ -1,11 +1,11 @@
 .about-section {
   height: 100vh;
   position: relative;
-  margin: -0.8vw;
+  margin: -1.3vw;
   margin-top: 5vw;
    //margin:0px;
   //background-color: #E8C6EB;
-  background-image: url("../../assets/gl.png");
+  background-image: url("../../assets/new.png");
   background-repeat:no-repeat;
   background-size: contain;
   background-position:center left;
@@ -15,15 +15,17 @@
 
 .tab {
   position: absolute;
-  width: 15vw; /* Adjust initial width as needed */
+  width: 20vw; /* Adjust initial width as needed */
   height: 8vw; /* Adjust height as needed */
   overflow: hidden;
   transition: width 0.5s;
   text-align: center;
-  background-color: rgba(186, 162, 236, 0.71);
+  //background-color: #ffcfdd;
+  //background-color: rgba(186, 162, 236, 0.71);
   //background-image: linear-gradient(135deg, #d1b4ea 40%, #b0d6ea);
   margin: auto;
-  box-shadow: 0 0.6vw 0.6vw rgba(0, 0, 0, 0.3);
+  //box-shadow: 0 0.6vw 0.6vw rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 20px 35px -16px rgb(215, 119, 146);
 }
 
 .tab h2{
@@ -31,6 +33,7 @@
   font-size: 3vw;
   margin: auto;
   text-align: center;
+  font-family: "Ubuntu Condensed", sans-serif;
 }
 
 .tab-content {
@@ -47,9 +50,9 @@
   margin: auto;
 }
 
-.tab:hover {
+.tab:hover, .tab:checked {
   width: 50vw; /* Adjust expanded width as needed */
-  //background-color: #DFB1CB;
+  background-color: #ffcfdd;
 }
 
 .tab:hover .tab-content {
@@ -73,10 +76,10 @@
 @media screen and (max-width: 767px) {
   .about-section{
     height: 300px;
-    background-image: url("../../assets/gl.png");
     background-repeat:no-repeat;
-    background-size: 80%;
+    background-size: 70%;
     background-position:bottom left;
+    margin-left: -5vw;
   }
   .tab {
     width: 25vw; /* Adjust width for mobile devices */
