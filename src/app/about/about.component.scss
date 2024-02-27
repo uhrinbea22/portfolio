@@ -1,54 +1,96 @@
-.about-me-section {
-  font-family: 'Ubuntu Condensed', sans-serif;
-  font-size: 1.7vw;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
+.about-section {
+  height: 100vh;
+  position: relative;
+  margin: -0.8vw;
+  margin-top: 5vw;
+   //margin:0px;
+  //background-color: #E8C6EB;
+  background-image: url("../../assets/gl.png");
+  background-repeat:no-repeat;
+  background-size: contain;
+  background-position:center left;
+  overflow: visible;
+}
+
+
+.tab {
+  position: absolute;
+  width: 15vw; /* Adjust initial width as needed */
+  height: 8vw; /* Adjust height as needed */
+  overflow: hidden;
+  transition: width 0.5s;
+  text-align: center;
+  background-color: rgba(186, 162, 236, 0.71);
+  //background-image: linear-gradient(135deg, #d1b4ea 40%, #b0d6ea);
+  margin: auto;
+  box-shadow: 0 0.6vw 0.6vw rgba(0, 0, 0, 0.3);
+}
+
+.tab h2{
+  //writing-mode: vertical-rl;
+  font-size: 3vw;
+  margin: auto;
+  text-align: center;
+}
+
+.tab-content {
+  position: absolute;
+  top: 0;
+  left: 100%;
   width: 100%;
-
-}
-
-.about-me-text {
-  display:inline;
-  width: 80%;
-  height: auto;
-  background-color: white ;
+  height: 100%;
+  padding: 0.4vw;
   box-sizing: border-box;
-  flex: 1;
-  margin-left: 3vw;
+ // background-color: #CCCCFF;
+  transition: transform 0.5s;
+  transform: translateX(0);
+  margin: auto;
 }
 
-.about-me-heading{
-  text-align: center;
-  vertical-align: middle;
-  font-family: "Rampart One", sans-serif;
-  //font-family: "Cherry Bomb One", sans-serif;
-  //font-family: "Titan One", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.tab:hover {
+  width: 50vw; /* Adjust expanded width as needed */
+  //background-color: #DFB1CB;
 }
 
-h2 {
-  text-transform: uppercase;
-  color:  #c0adf1;;
-  writing-mode: vertical-rl;
-  text-align: center;
-  text-orientation: upright;
-  font-size: 6vw;
-  letter-spacing: 0.2vw;
+.tab:hover .tab-content {
+  transform: translateX(-100%);
+  font-weight: bold;
 }
 
-p {
-  color: #000000;
-  line-height: 1.6;
+
+.tab:hover h2 {
+  opacity: 0;
+  transform: translateX(40);
 }
 
-.place{
-  float: right;
-  width: 40%;
-  background-color: #c0adf1;
-  margin-right: -5vw;
-  height: auto;
+/* Positioning tabs in corners */
+.bottom-left { top: 0; right: 0; }
+.bottom-right { top: 25%; right: 0; }
+.top-left { top: 50%; right: 0; }
+.top-right { top: 75%; right: 0; }
+
+/* Responsive styles for mobile */
+@media screen and (max-width: 767px) {
+  .about-section{
+    height: 300px;
+    background-image: url("../../assets/gl.png");
+    background-repeat:no-repeat;
+    background-size: 80%;
+    background-position:bottom left;
+  }
+  .tab {
+    width: 25vw; /* Adjust width for mobile devices */
+    height: 15vw; /* Adjust height for mobile devices */
+  }
+  .tab:hover{
+    width: 90vw;
+    height: 20vw;
+  }
+  .tab-content {
+    font-size: 10px;
+  }
+
+  .tab h2 {
+    font-size: 5vw; /* Adjust font size for mobile devices */
+  }
 }

@@ -18,7 +18,7 @@
   font-size: 1.5vw;
   align-items: center;
   justify-content: space-evenly;
-  width: 13%;
+  //width: 13%;
   font-family: "Ubuntu Condensed", serif;
 }
 
@@ -61,3 +61,8 @@ a:hover {
   display: none;
 }
 
+@media screen and (max-width: 767px) {
+.topnav a{
+  font-size: 3.5vw;
+}
+}

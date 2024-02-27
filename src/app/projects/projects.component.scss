@@ -70,7 +70,7 @@
 
 .tags {
   margin-top: 0.5vw;
-  font-size: 1.5vw;
+  font-size: 2vw;
 }
 
 .tag {
@@ -86,13 +86,13 @@
 .description {
   margin: auto;
   font-family: "Ubuntu Condensed", serif;
-  font-size: 2vw;
+  font-size: 2.4vw;
 }
 
 .project_name{
   margin: auto;
   font-family: "Ubuntu Condensed", serif;
-  font-size: 3vw;
+  font-size: 3.5vw;
 
 }
 
@@ -148,8 +148,8 @@
   display: flex;
   flex-direction: column;
   font-family: "Codec cold",sans-serif;
-  font-size: 1vw;
-  font-weight: 700;
+  font-size: 2vw;
+  font-weight: 400;
   height: 5vw;
   justify-content: center;
   letter-spacing: .4px;
@@ -186,25 +186,28 @@
 
 @media screen and (max-width: 600px) {
   .card {
-    height: 14.063vw;
-    width: 10.417vw;
+    height: 20.063vw;
+    width: 16.417vw;
   }
   .additional-section {
-    width: 30%;
+    width: 60%;
     display: flex;
   }
   .project-info {
     flex: auto;
   }
   .project-image {
-    height: 40vw;
-    width: 40vw;
+    height: 50vw;
+    width: 50vw;
 
   }
   .button_link {
     font-size: 2vw;
   }
 
+  .project_name{
+    font-size: 4.5vw;
+  }
 }
 
 
