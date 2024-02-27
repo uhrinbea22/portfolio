@@ -12,7 +12,7 @@
       </div>
     </div>
     <div class="project-frame" *ngIf="project.image">
-      <img [src]="project.image" alt="{{ project.name }}" class="project-image">
+      <img src="{{project.image}}" alt="{{ project.name }}" class="project-image">
     </div>
     <div class="additional-section" *ngIf="project.cards">
       <div class="card card1"></div>
