@@ -34,17 +34,17 @@
 .project-image {
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 1.5vw;
   margin: auto;
 }
 
 .project-info {
   flex: 1;
   position: relative;
-  padding: 15px;
+  padding: 2vw;
   background-color: rgba(255, 255, 255, 0.9);
   transition: background-color 0.3s ease-in-out;
-  border-radius: 8px;
+  border-radius: 1.5vw;
   margin: auto;
 }
 
@@ -116,7 +116,7 @@
   background-position: bottom;
   background-repeat: no-repeat;
   width: 15vw;
-  margin: 10px;
+  margin: 0.5vw;
   bottom: 0;
   background-color: black;
 }
@@ -147,7 +147,7 @@
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  font-family: "Codec cold",sans-serif;
+  font-family: "Ubuntu Condensed",sans-serif;
   font-size: 2vw;
   font-weight: 400;
   height: 5vw;
@@ -207,6 +207,10 @@
 
   .project_name{
     font-size: 4.5vw;
+  }
+  .description {
+
+    font-size: 3vw;
   }
 }
 
