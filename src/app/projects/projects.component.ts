@@ -11,7 +11,7 @@ export class ProjectsComponent {
       name: 'Expense Management Application',
       description: 'An app for tracking your expense and income. Detailed transactions, balance, limits, calendar view, diagrams.',
       tags: ['Mobile App', 'Flutter', 'Dart' , 'Firebase'],
-      image: 'assets/expense_management/as.png',
+      image: 'portfolio/assets/expense_management/as.png',
       link:'https://github.com/uhrinbea22/XPT'
     },
     {
@@ -32,7 +32,7 @@ export class ProjectsComponent {
       name: 'Wordpress Site',
       description: 'Business website for a building company. ',
       tags: ['Wordpress', 'Webdesign', 'Design skills'],
-      image: 'assets/wp/general_mockup.png',
+      image: '/portfolio/assets/wp/general_mockup.png',
       link:'https://general-sprint.com/'
     },
     {
