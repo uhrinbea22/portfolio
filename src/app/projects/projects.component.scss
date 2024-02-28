@@ -123,6 +123,9 @@
   bottom: 0;
   background-color: black;
 }
+.link_mobile{
+  display: none;
+}
 
 .card:hover {
   z-index: 200;
@@ -219,12 +222,13 @@
     display: none;
   }
   .card {
-    height: 20vw;
-    width: 16vw;
+    display: flex;
+    height: 26vw;
+    width: 19.6vw;
   }
 
   .card:hover {
-    transform: scale(2);
+    transform: scale(1.4);
   }
 
   .additional-section {
@@ -243,9 +247,16 @@
     font-size: 4vw;
   }
 
+ .link_mobile{
+   display: grid;
+   font-size: 6vw;
+   padding-bottom: 3vw;
+ }
+
   .project_name{
     font-size: 6vw;
     padding-bottom: 3vw;
+    text-decoration: underline;
   }
   .description {
     font-size: 4vw;
@@ -254,20 +265,22 @@
     display: none;
   }
 
-  .project:nth-child(2){
-    flex-direction: column;
-  }
   .additional-section{
     width: 90%;
+    height: 100%;
+    overflow: visible;
   }
+
   .card:checked{
-    z-index: 200;
-    transform: scale(1.15);
+    z-index: 2000;
+    transform: scale(1.1);
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    overflow: visible;
   }
   .project:nth-child(2){
     height: 70vw;
     width: 100%;
+    overflow: visible;
   }
 
   .project:nth-child(5){
@@ -278,7 +291,6 @@
       margin-top: 3vw;
       font-family: "Ubuntu Condensed", sans-serif;
       font-weight: bold;
-
     }
     .container .button_link{
       width: 20vw;
@@ -286,6 +298,16 @@
       margin: auto;
     }
   }
+
+  .card.card1 {  left: 0; top:0;}
+  .card.card2 { left: 25%; top:0;}
+  .card.card3 { left: 50%; top:0;}
+  .card.card4 {  left: 75%; top:0;}
+  .card.card5 { left: 0; top:60%; }
+  .card.card6 {left: 25%; top:60%; }
+  .card.card7 { left: 50%; top:60%;}
+  .card.card8 { left: 75%; top:60%;}
+
 }
 
 

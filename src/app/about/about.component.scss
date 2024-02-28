@@ -85,8 +85,11 @@
   .tab {
     width: 25vw;
     height: 15vw;
+    //background-image: url("../../assets/about_me.png");
+    //background-position: center right;
+    //background-size: 140%;
   }
-  .tab:hover{
+  .tab:hover, .tab:checked{
     width: 90vw;
     height: 20vw;
     background-color: white;
@@ -97,5 +100,7 @@
 
   .tab h2 {
     font-size: 5vw; /* Adjust font size for mobile devices */
+    margin-top: 4vw;
+
   }
 }
