@@ -74,18 +74,17 @@
 .top-left { top: 50%; right: 0; }
 .top-right { top: 75%; right: 0; }
 
-/* Responsive styles for mobile */
+
 @media screen and (max-width: 767px) {
   .about-section{
     height: 300px;
     background-repeat:no-repeat;
     background-size: 70%;
     background-position:bottom left;
-    margin-left: -5vw;
   }
   .tab {
-    width: 25vw; /* Adjust width for mobile devices */
-    height: 15vw; /* Adjust height for mobile devices */
+    width: 25vw;
+    height: 15vw;
   }
   .tab:hover{
     width: 90vw;

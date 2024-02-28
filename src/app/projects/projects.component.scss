@@ -189,40 +189,66 @@
 
 @media screen and (max-width: 600px) {
   .project{
-    padding-left:0;
-    padding-right: 0;
-    height: 70vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    height: 110vw;
     width: 100%;
-    padding: 0;
+    padding: 2vw;
+    flex-direction: column;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+
+  }
+
+
+  .left-project .project-frame {
+    order: 1;
+  }
+
+  .left-project .project-info {
+    order: 1;
+  }
+
+  .right-project .project-frame {
+    order: 1;
+  }
+
+  .right-project .project-info {
+    order: 1;
   }
   .container{
     display: none;
   }
   .card {
-    height: 20.063vw;
-    width: 16.417vw;
+    height: 20vw;
+    width: 16vw;
   }
+
+  .card:hover {
+    transform: scale(2);
+  }
+
   .additional-section {
     width: 60%;
     display: flex;
   }
   .project-info {
     flex: auto;
+    text-align: center;
   }
   .project-image {
-    height: 60vw;
-    width: 60vw;
+    height: 90vw;
+    width: 90vw;
   }
   .button_link {
     font-size: 4vw;
   }
 
   .project_name{
-    font-size: 5.5vw;
+    font-size: 6vw;
     padding-bottom: 3vw;
   }
   .description {
-    font-size: 3.5vw;
+    font-size: 4vw;
   }
   .tags{
     display: none;
@@ -239,17 +265,25 @@
     transform: scale(1.15);
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   }
+  .project:nth-child(2){
+    height: 70vw;
+    width: 100%;
+  }
 
   .project:nth-child(5){
+    height: 50vw;
+    width: 100%;
     .container{
       display: flex;
       margin-top: 3vw;
       font-family: "Ubuntu Condensed", sans-serif;
       font-weight: bold;
+
     }
     .container .button_link{
       width: 20vw;
       height: 10vw;
+      margin: auto;
     }
   }
 }
