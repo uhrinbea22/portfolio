@@ -11,7 +11,7 @@ export class ProjectsComponent {
       name: 'Expense Management Application',
       description: 'An app for tracking your expense and income. Detailed transactions, balance, limits, calendar view, diagrams.',
       tags: ['Mobile App', 'Flutter', 'Dart' , 'Firebase'],
-      image: 'portfolio/assets/expense_management/as.png',
+      image: '/portfolio/assets/expense_management/as.png',
       link:'https://github.com/uhrinbea22/XPT'
     },
     {
@@ -25,7 +25,7 @@ export class ProjectsComponent {
       name: 'Woocommerce Wordpress Site',
       description: 'Webshop page for a cakery.',
       tags: ['Wordpress', 'Webdesign'],
-      image: 'assets/wp/ac_mockup.png',
+      image: '/portfolio/assets/wp/ac_mockup.png',
       link:'https://cukraszdaac.eu/wp/'
     },
     {

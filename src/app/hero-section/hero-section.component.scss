@@ -6,14 +6,14 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 20%;
-  margin-left: 40%;
+  margin-left: 80%;
 }
 .container .btn {
   position: relative;
   top: 0;
   left: 0;
-  width: 13vw;
-  height: 3vw;
+  width: 15vw;
+  height: 5vw;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -70,7 +70,7 @@
   bottom: -0.26vw;
   width: 1.5vw;
   height: 0.5vw;
-  background: #f00;
+  background: #ffcfdd;
   border-radius: 0.5vw;
   transition: 0.5s;
   transition-delay: 0.5;
@@ -90,7 +90,7 @@
   top: -0.25vw;
   width: 1.5vw;
   height: 0.5vw;
-  background: #f00;
+  background: #ffcfdd;
   border-radius: 0.5vw;
   transition: 0.5s;
   transition-delay: 0.5;
@@ -103,22 +103,10 @@
 }
 .container .btn:nth-child(1)::before, /*chnage 1*/
 .container .btn:nth-child(1)::after {
-  background: #ff1f71;
-  box-shadow: 0 0 0.2vw #ff1f71, 0 0 0.7vw #ff1f71, 0 0 1.5vw #ff1f71,
-  0 0 3vw #ff1f71;
+  background: lavender;
+  box-shadow: 0 0 0.2vw #ffcfdd, 0 0 0.7vw #ffcfdd, 0 0 1.5vw #ffcfdd,
+  0 0 3vw #ffcfdd;
 }
-.container .btn:nth-child(2)::before, /* 2*/
-.container .btn:nth-child(2)::after {
-  background: #2db2ff;
-  box-shadow: 0 0 0.2vw #2db2ff, 0 0 0.7vw #2db2ff, 0 0 1.5vw #2db2ff,
-  0 0 3vw #2db2ff;
-}
-
-
-
-
-
-
 
 .hero-section {
   text-align: center;
@@ -132,12 +120,12 @@
 }
 
 .portfolio_pic {
-  width: 30%;
+  width: 35%;
   height: auto;
   float: left;
   display: inline-flex;
-  margin-left: 5%;
-//  border-radius: 40%;
+  margin-left: 25%;
+  //  border-radius: 40%;
   margin-top: 2%;
   object-fit: cover;
 }
@@ -153,11 +141,10 @@
 }
 
 .decor_pic{
-  width: 30%;
+  width: 40%;
   position: absolute;
-  right: -2vw;
-  top: 10vw;
-
+  left: -2vw;
+  top: 2vw;
 }
 
 .hero-inner{
@@ -171,7 +158,7 @@
   display: inline-block;
   white-space: nowrap;
   line-height: 70%;
-  margin-top: 2.5vw;
+  margin-top: 5vw;
   object-fit: scale-down;
 }
 
@@ -270,33 +257,57 @@ a:hover {
 
 
 @media screen and (max-width: 600px) {
+  .hero-section{
+    flex-direction: column;
+  }
 
   .portfolio_pic{
-    width: 40%;
+    width: 60%;
     height: auto;
     object-fit: scale-down;
-    margin-left: 1%;
+    margin-left: 4%;
+    margin-top: 15%;
   }
 
   .hero-inner{
-    text-align: left;
+    text-align: right;
+    //width: 100%; /* Make both elements take full width */
+    margin-left: 5%;
+    margin-top: 5%;
+
     h1{
-      font-size:8vw;
-      margin-left:5vw;
+      font-size:10vw;
+      margin-left:0vw;
       margin-top: 6vw;
     }
     h2{
-      font-size: 6vw;
+      font-size: 8vw;
       margin-left:10vw;
     }
     p{
-      font-size:4vw;
+      font-size:6vw;
       margin-left: 15vw;
     }
   }
   .container .btn a {
-    font-size: 2.3vw;
+    font-size: 4.3vw;
   }
+
+  .decor_pic{
+    width: 65%;
+    position: absolute;
+    left: 50vw;
+    top: -1vw;
+  }
+
+  .container{
+    margin-top: 10%;
+  }
+  .container .btn {
+    width: 20vw;
+    height: 7vw;
+  }
+
 
 }
 

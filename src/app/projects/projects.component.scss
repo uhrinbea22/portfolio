@@ -75,12 +75,15 @@
 
 .tag {
   display: inline-block;
-  padding: 0.25vw 0.5vw;
-  margin-right: 0.25vw;
+  padding: 0.7vw 0.7vw;
+// margin-right: 0.25vw;
+  margin: 0.4vw;
   background-color: #c0adf1;
   color: #381f1f;
   border-radius: 0.4vw;
-  box-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.1);;
+  box-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.1);
+  font-size: 1.5vw;
+
 }
 
 .description {
@@ -185,6 +188,16 @@
 
 
 @media screen and (max-width: 600px) {
+  .project{
+    padding-left:0;
+    padding-right: 0;
+    height: 70vw;
+    width: 100%;
+    padding: 0;
+  }
+  .container{
+    display: none;
+  }
   .card {
     height: 20.063vw;
     width: 16.417vw;
@@ -197,20 +210,47 @@
     flex: auto;
   }
   .project-image {
-    height: 50vw;
-    width: 50vw;
-
+    height: 60vw;
+    width: 60vw;
   }
   .button_link {
-    font-size: 2vw;
+    font-size: 4vw;
   }
 
   .project_name{
-    font-size: 4.5vw;
+    font-size: 5.5vw;
+    padding-bottom: 3vw;
   }
   .description {
+    font-size: 3.5vw;
+  }
+  .tags{
+    display: none;
+  }
 
-    font-size: 3vw;
+  .project:nth-child(2){
+    flex-direction: column;
+  }
+  .additional-section{
+    width: 90%;
+  }
+  .card:checked{
+    z-index: 200;
+    transform: scale(1.15);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+
+  .project:nth-child(5){
+    .container{
+      display: flex;
+      margin-top: 3vw;
+      font-family: "Ubuntu Condensed", sans-serif;
+      font-weight: bold;
+    }
+    .container .button_link{
+      width: 20vw;
+      height: 10vw;
+    }
   }
 }
 
