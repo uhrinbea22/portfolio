@@ -78,7 +78,7 @@
   padding: 0.7vw 0.7vw;
 // margin-right: 0.25vw;
   margin: 0.4vw;
-  background-color: #c0adf1;
+  background-image: linear-gradient(135deg, #e6bbff , #c4a1ff 60%);
   color: #381f1f;
   border-radius: 0.4vw;
   box-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.1);
@@ -144,7 +144,7 @@
 .button_link {
   width: 15vw;
   align-items: center;
-  background-image: linear-gradient(135deg, #c9a4e7 40%, #83d4ee);
+  background-image: linear-gradient(135deg, #e397dd 40%, #f6e8af);
   margin-top : 2vw;
   margin-left: 2vw;
   border-radius: 1.4vw;
@@ -271,16 +271,21 @@
     overflow: visible;
   }
 
-  .card:checked{
+  .card:hover, .card:active, .card:focus{
     z-index: 2000;
     transform: scale(1.1);
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     overflow: visible;
   }
+
   .project:nth-child(2){
     height: 70vw;
     width: 100%;
     overflow: visible;
+    .project-info{
+      background-color: rgba(255, 255, 255, 0.95);
+      z-index: 150;
+    }
   }
 
   .project:nth-child(5){
