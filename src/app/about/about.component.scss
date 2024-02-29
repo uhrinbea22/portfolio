@@ -5,13 +5,24 @@
   margin-top: 5vw;
    //margin:0px;
   //background-color: #E8C6EB;
-  background-image: url("../../assets/new.png");
-  background-repeat:no-repeat;
-  background-size: contain;
-  background-position:center left;
+  background-image: url("../../assets/nb.png");
+//  background-image: url("../../assets/about_me.png");
+  background-repeat: space;
+  background-size: 60%;
+  background-position:center;
   overflow: visible;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   padding: 2vw;
+  h2{
+    font-family: "Oswald",sans-serif;
+    font-size: 15vw;
+  }
+  h3{
+    font-family: "Oswald",sans-serif;
+    margin-left: 40vw;
+    font-size: 8vw;
+    margin-top: -29vw;
+  }
 }
 
 .tab {
@@ -34,7 +45,7 @@
   font-size: 3vw;
   margin: auto;
   text-align: center;
-  font-family: "Ubuntu Condensed", sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 .tab-content {
@@ -79,8 +90,14 @@
   .about-section{
     height: 300px;
     background-repeat:no-repeat;
-    background-size: 70%;
-    background-position:bottom left;
+    background-size: 120%;
+    background-position:center;
+    h3{
+      //margin-top: 45vw;
+    }
+    h2{
+      margin-top:70vw;
+    }
   }
   .tab {
     width: 25vw;
@@ -99,8 +116,7 @@
   }
 
   .tab h2 {
-    font-size: 5vw; /* Adjust font size for mobile devices */
+    font-size: 5vw;
     margin-top: 4vw;
-
   }
 }
