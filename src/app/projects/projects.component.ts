@@ -16,7 +16,7 @@ export class ProjectsComponent {
     },
     {
       name: 'Card game cards',
-      description: 'Futuristic robot-themed images generated with MidJourney, styled with Pixlr',
+      description: 'Futuristic robot-themed images generated with MidJourney, styled with Pixlr.',
       tags: ['Design skills', 'AI'],
       cards: true,
     },
@@ -30,14 +30,14 @@ export class ProjectsComponent {
     },
     {
       name: 'Wordpress Site',
-      description: 'Business website for a building company. ',
+      description: 'Business website for a building company.',
       tags: ['Wordpress', 'Webdesign', 'Design skills'],
       image: '/portfolio/assets/wp/general_mockup.png',
       link:'https://general-sprint.com/'
     },
     {
       name: 'Data analysis (About Popular K-Dramas)',
-      description: 'Some basic assumptions from the data, which I downloaded from Kaggle.I used Jupyter Notebook (Python) for analysing the data.',
+      description: 'Some basic assumptions from the data I downloaded from Kaggle. I used Jupyter Notebook (Python) for analyzing the data.',
       tags: ['Jupyter Notebook', 'Basic Data Analysis', 'Python'],
       link:'https://github.com/uhrinbea22/Data-analysis-'
     },
